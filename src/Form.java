@@ -80,7 +80,7 @@ public class Form extends JFrame {
             PreparedStatement preparedStatement = conn.prepareStatement(sql);
 
         }
-        return user;
+        return new_student;
     }
 
     public static void main(String[] args){
