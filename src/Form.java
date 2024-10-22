@@ -73,7 +73,7 @@ public class Form extends JFrame {
         final String PASSWORD = "Access";
 
         try{
-            Connection = DriverManager.getConnection(DB_URL,USERNAME, PASSWORD);
+            Connection conn = DriverManager.getConnection(DB_URL,USERNAME, PASSWORD);
 
             Statement stmnt = conn.createStatement();
             String sql = "INSERT INTO new_student(first_name, middle_name, last_name, address, phone_number, email, gender) " + "VALUES(?, ?, ?, ?, ?, ?, ?)";
